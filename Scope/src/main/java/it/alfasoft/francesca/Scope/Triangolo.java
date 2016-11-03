@@ -62,7 +62,8 @@ public class Triangolo implements ApplicationContextAware,BeanNameAware{
 		this.puntoC = puntoC;
 	}
 
-	//Vediamo che prima esegue il setBean e poi il set applicationcontext
+	//Vediamo che prima esegue il setBean e poi il set applicationcontext per ogni bean che
+	//creo
 	
  ApplicationContext context;
 
@@ -70,6 +71,7 @@ public class Triangolo implements ApplicationContextAware,BeanNameAware{
 	public void setApplicationContext(ApplicationContext context)
 			throws BeansException {
 		this.context=context;
+		System.out.println("Context");
 		
 	}
 	
