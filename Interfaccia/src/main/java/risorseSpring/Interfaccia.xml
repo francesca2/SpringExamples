@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+          <bean id="triangolo"   class="interfaccia.Triangolo" autowire="byName">
+         
+          </bean>
+          
+<!--            <bean id="cerchio"   class="interfaccia.Cerchio"> -->
+<!--              <property name="centro"    ref="p3"/> -->
+          
+<!--             </bean> -->
+
+            <bean id="puntoA"   class="interfaccia.Punto">
+            
+               <property name="x" value="10"></property>
+               <property name="y" value="10"></property>
+          
+            </bean>
+            
+                <bean id="puntoB"   class="interfaccia.Punto">
+            
+                <property name="x" value="20"></property>
+                <property name="y" value="20"></property>
+          
+             </bean>
+            
+               <bean id="puntoC"   class="interfaccia.Punto">
+            
+               <property name="x" value="30"></property>
+               <property name="y" value="30"></property>
+          
+            </bean>
+            
+            
+<!--    per utilizzare annotazione @Required -->
+<!-- Con l'annotazione required, che deve sempre essere posta prima del setter, posso
+tenere traccia di quando ho avuto un null pointer exception e risalire così a dove si è
+origintato l'errore -->
+            <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
+            
+  </beans>          
