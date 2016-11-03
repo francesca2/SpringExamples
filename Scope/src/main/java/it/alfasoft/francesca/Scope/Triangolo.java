@@ -62,6 +62,8 @@ public class Triangolo implements ApplicationContextAware,BeanNameAware{
 		this.puntoC = puntoC;
 	}
 
+	//Vediamo che prima esegue il setBean e poi il set applicationcontext
+	
  ApplicationContext context;
 
 	@Override
