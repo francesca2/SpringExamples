@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<!-- Lo scope dei bean di default è singleton ovvero posso avere una singola istanza per context, 
+posso però cambiarlo a prototype di modo da creare un nuovo bean ogni volta che ne chiamo uno -->
+    <bean id="triangolo"   class="it.alfasoft.francesca.Scope.Triangolo" autowire="byName"  scope="prototype"/>
+
+          
+            <bean id="puntoA"   class="it.alfasoft.francesca.Scope.Punto" >
+            
+               <property name="x" value="10"></property>
+               <property name="y" value="10"></property>
+          
+            </bean>
+            
+               <bean id="puntoB"   class="it.alfasoft.francesca.Scope.Punto">
+            
+               <property name="x" value="20"></property>
+               <property name="y" value="20"></property>
+          
+            </bean>
+            
+               <bean id="puntoC"   class="it.alfasoft.francesca.Scope.Punto" >
+            
+               <property name="x" value="30"></property>
+               <property name="y" value="30"></property>
+          
+            </bean>
+            
+  </beans>          
