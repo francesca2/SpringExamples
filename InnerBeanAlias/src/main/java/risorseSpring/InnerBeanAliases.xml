@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+          <bean id="triangolo"   class="it.alfasoft.francesca.InnerAlias.Triangolo">
+               
+               <!-- innerbean: posso creare i bean direttamente qundo li dichiaro 
+               come attributi dell'oggetto a cui appartengono -->
+                <property name="puntoA" >
+                
+                 <bean  class="it.alfasoft.francesca.InnerAlias.Punto">
+            
+                  <property name="x" value="10"></property>
+                  <property name="y" value="10"></property>
+          
+                 </bean>
+                 
+                 
+                </property>
+               
+               <property name="puntoB" >
+                
+                 <bean  class="it.alfasoft.francesca.InnerAlias.Punto">
+            
+                  <property name="x" value="20"></property>
+                  <property name="y" value="20"></property>
+          
+                 </bean>
+                 
+                 
+                </property>
+                
+                <property name="puntoC" >
+                
+                 <bean  class="it.alfasoft.francesca.InnerAlias.Punto">
+            
+                  <property name="x" value="30"></property>
+                  <property name="y" value="30"></property>
+          
+                 </bean>
+                 
+                 
+                </property>
+               
+                
+          </bean>
+          
+<!--  alias posso ridefinire l'id di triangolo e riferirmi ad esso con un alias -->
+          
+          <alias name="triangolo" alias="tt"/>
+          
+           
+            
+              
+            
+  </beans>          
