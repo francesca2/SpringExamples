@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+          <bean id="triangolo"   class="it.alfasoft.francesca.EsempioList.Triangolo">
+                
+                <!-- Se ho una lista di oggetti posso riempirla nel momento in cui creo il 
+                bean nel seguente modo. La lista non tiene conto dell'ordine di inserimento-->
+              <property name="punti">
+              
+                <list>
+                      <ref bean="p2" />
+                    <ref bean="p1" />
+                  <ref bean="p3" />
+                </list>
+              
+              
+              </property>
+                
+          </bean>
+      
+            <bean id="p1"   class="it.alfasoft.francesca.EsempioList.Punto">
+            
+               <property name="x" value="10"></property>
+               <property name="y" value="10"></property>
+          
+            </bean>
+            
+               <bean id="p2"   class="it.alfasoft.francesca.EsempioList.Punto">
+            
+               <property name="x" value="20"></property>
+               <property name="y" value="20"></property>
+          
+            </bean>
+            
+               <bean id="p3"   class="it.alfasoft.francesca.EsempioList.Punto">
+            
+               <property name="x" value="35"></property>
+               <property name="y" value="35"></property>
+          
+            </bean>
+            
+  </beans>          
