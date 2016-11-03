@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans default-destroy-method="myMethodDestroy" default-init-method="myMethodInit">
+
+          <bean id="triangolo"   class="InitializingDestroy.Triangolo">
+                <property name="puntoA"    ref="p1"/>
+                <property name="puntoB"    ref="p2"/>
+                <property name="puntoC"    ref="p3"/>
+                
+          </bean>
+          
+            <bean id="p1"   class="InitializingDestroy.Punto">
+            
+               <property name="x" value="10"></property>
+               <property name="y" value="10"></property>
+          
+            </bean>
+            
+               <bean id="p2"   class="InitializingDestroy.Punto">
+            
+               <property name="x" value="20"></property>
+               <property name="y" value="20"></property>
+          
+            </bean>
+            
+               <bean id="p3"   class="InitializingDestroy.Punto">
+            
+               <property name="x" value="30"></property>
+               <property name="y" value="30"></property>
+          
+            </bean>
+            
+  </beans>          
