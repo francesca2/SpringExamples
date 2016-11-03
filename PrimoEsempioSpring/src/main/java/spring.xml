@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<!--     creazione del bean  -->
+<!--Creo un bean direttamente e setto il valore di ciascun attributo -->
+    <bean id="triangolo" class="it.alfasoft.francesca.EsempioContext.Triangolo"> 
+ 
+<!--          <property name="nome" value="Equilatero" />  -->
+
+<!-- In questo modo posso passare i valori degli attributi direttamente definendo un costruttore opportuno, 
+l'indice si riferisce all'ordine col quale gli ho passato gli argomenti nel costruttore -->
+                               <constructor-arg   index="0" value="Equilatero"/> 
+                               <constructor-arg   index="1"  value="20"/> 
+   </bean> 
+
+</beans>
