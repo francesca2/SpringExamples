@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<!-- Posso definire un bean astratto che uso come padre e che contiene alcuni attributi,la
+classe padre non deve essere istanziata ma posso accedere agli attributi tramite il figlio
+che li eredita -->
+    <bean id="triangoloPadre"   class="BeanDefInheritance.Triangolo" abstract="true">
+    
+              <property name="puntoA" ref="p1"/>
+    </bean>
+          
+          <bean id="triangoloFiglio"   class="BeanDefInheritance.Triangolo" parent="triangoloPadre" >
+    
+              <property name="puntoB" ref="p2"/>
+              <property name="puntoC" ref="p3"/>
+    </bean>  
+          
+          
+            <bean id="p1"   class="BeanDefInheritance.Punto" >
+            
+               <property name="x" value="10"></property>
+               <property name="y" value="10"></property>
+          
+            </bean>
+            
+               <bean id="p2"   class="BeanDefInheritance.Punto">
+            
+               <property name="x" value="20"></property>
+               <property name="y" value="20"></property>
+          
+            </bean>
+            
+               <bean id="p3"   class="BeanDefInheritance.Punto" >
+            
+               <property name="x" value="30"></property>
+               <property name="y" value="30"></property>
+          
+            </bean>
+            
+  </beans>          
