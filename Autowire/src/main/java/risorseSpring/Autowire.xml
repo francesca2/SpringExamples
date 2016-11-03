@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<!-- Posso iniettare gli oggetti con autowire che può essere sia byName che con byTag. Questo
+ultimo però funziona solo su un singolo oggetto mentre byName devo essere sicuro che
+gli id abbiano gli stessi nomi degli attributi -->
+          <bean id="triangolo"   class="it.alfasoft.francesca.Autowire.Triangolo" autowire="byName" />
+
+            <bean id="puntoA"   class="it.alfasoft.francesca.Autowire.Punto">
+            
+               <property name="x" value="10"></property>
+               <property name="y" value="10"></property>
+          
+            </bean>
+            
+               <bean id="puntoB"   class="it.alfasoft.francesca.Autowire.Punto">
+            
+               <property name="x" value="18"></property>
+               <property name="y" value="18"></property>
+          
+            </bean>
+            
+               <bean id="puntoC"   class="it.alfasoft.francesca.Autowire.Punto">
+            
+               <property name="x" value="35"></property>
+               <property name="y" value="35"></property>
+          
+            </bean>
+            
+  </beans>          
