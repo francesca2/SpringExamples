@@ -4,7 +4,8 @@ public class Triangolo {
 	 
 	  private String nome;
 	  private int base;
-	  
+
+	  //mettere sempre il costruttore vuoto
 	  public Triangolo() {
 			
 		}

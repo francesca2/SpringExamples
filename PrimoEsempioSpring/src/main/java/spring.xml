@@ -5,7 +5,7 @@
 <beans>
 
 <!--     creazione del bean  -->
-<!--Creo un bean direttamente e setto il valore di ciascun attributo -->
+<!--Creo un bean e setto il valore di ciascun attributo, l'id identificherà il bean creato -->
     <bean id="triangolo" class="it.alfasoft.francesca.EsempioContext.Triangolo"> 
  
 <!--          <property name="nome" value="Equilatero" />  -->
