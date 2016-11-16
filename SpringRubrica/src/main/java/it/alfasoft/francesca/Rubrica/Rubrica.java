@@ -49,4 +49,8 @@ public class Rubrica {
 		}
 		return vt;
 	}
+	
+	public void addVoce(Voce v){
+		this.voci.add(v);
+	}
 }

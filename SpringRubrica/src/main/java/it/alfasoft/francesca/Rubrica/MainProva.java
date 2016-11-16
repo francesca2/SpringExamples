@@ -12,9 +12,11 @@ public class MainProva {
 		 
 		   Rubrica r=(Rubrica) context.getBean("rubrica");
 		   
-		   Voce v=r.getVoceByName("Donald");
-		   
+//		   Voce v=r.getVoceByName("Donald");		   
 //		   System.out.println(v.getNome()+" "+ v.getCognome());
+		   
+		   Voce v1=new Voce("Paolino","Paperino","12245");
+		   r.addVoce(v1);
 		   
 		   r.stampaVoci();
 	}
