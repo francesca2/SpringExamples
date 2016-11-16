@@ -24,7 +24,7 @@
 
 <bean id="voce2" class="it.alfasoft.francesca.Rubrica.Voce">
 <property name="nome" value="Micky"></property>
-<property name="cognome" value="Duck"></property>
+<property name="cognome" value="Mouse"></property>
 <property name="telefono" value="12345"></property>
 </bean>
 

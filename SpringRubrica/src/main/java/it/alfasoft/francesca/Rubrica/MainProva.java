@@ -14,8 +14,9 @@ public class MainProva {
 		   
 		   Voce v=r.getVoceByName("Donald");
 		   
-		   System.out.println(v.getNome()+" "+ v.getCognome());
-
+//		   System.out.println(v.getNome()+" "+ v.getCognome());
+		   
+		   r.stampaVoci();
 	}
 
 }
